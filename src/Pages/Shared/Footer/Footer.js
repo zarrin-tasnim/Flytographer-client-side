@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer p-32 bg-black text-white">
             <div>
 
-                <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+                <p>Flytographer<br />Copyright &copy; 2022</p>
             </div>
             <div>
                 <span className="footer-title">Services</span>

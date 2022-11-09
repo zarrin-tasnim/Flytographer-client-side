@@ -1,5 +1,5 @@
 import React from 'react';
-import person from '../../../assets/images/image-banner.jpeg'
+import person from '../../../assets/images/service-1.jpg'
 //about
 
 const About = () => {
