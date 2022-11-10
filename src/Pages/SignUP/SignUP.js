@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../assets/images/signUp.jpeg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import SocialLogin from '../Shared/SocialLogin/SocialLogin';
+
 import useTitle from './../../hook/useTitle';
 
 const SignUp = () => {
@@ -58,7 +58,6 @@ const SignUp = () => {
                     <p className='text-center'>Already have an account? <Link className='text-purple-600 font-bold' to="/login">Login</Link> </p>
                 </div>
             </div>
-            <SocialLogin></SocialLogin>
         </div>
     );
 };
