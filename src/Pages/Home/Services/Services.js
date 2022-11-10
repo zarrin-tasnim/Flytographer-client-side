@@ -29,7 +29,7 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <Link to={`/services`}>
+            <Link to={`/servicesAll`}>
                 <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-purple-900">See All</button>
             </Link>
            
