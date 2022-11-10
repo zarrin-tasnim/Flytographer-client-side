@@ -9,14 +9,14 @@ const ServiceCard = ({ service }) => {
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
             <PhotoProvider>
                 <PhotoView src={img}>
-                    <figure><img className='' src={img} alt="" srcset="" /></figure>
+                    <figure><img className='h-40' src={img} alt="" srcset="" /></figure>
                 </PhotoView>
             </PhotoProvider>
             
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p className='text-2xl text-orange-600 font-semibold'>Price: ${price}</p>
-                <p>DEscription: {description}</p>
+                <p>DEscription: {description.slice(100)+'...'}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/services/${_id}`}>
                         <button className="btn btn-primary">View details</button>
