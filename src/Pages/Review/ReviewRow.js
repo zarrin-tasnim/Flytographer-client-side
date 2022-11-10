@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const ReviewRow = ({ order, handleDelete, handleStatusUpdate }) => {
-    const { _id, serviceName, phone, customer, price, service, status } = order;
+    const { _id, serviceName, phone,message, customer, price, service, status } = order;
     const [orderService, setOrderService] = useState({})
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const ReviewRow = ({ order, handleDelete, handleStatusUpdate }) => {
                         </div>
                         <div>
                             <div className="font-bold">{customer}</div>
-                           
+                            <div>{message}</div>
                         </div>
                     </div>
                 </td>
