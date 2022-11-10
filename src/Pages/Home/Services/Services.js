@@ -30,7 +30,7 @@ const Services = () => {
                 }
             </div>
             <Link to={`/services`}>
-                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-purple-900">View All</button>
+                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-purple-900">See All</button>
             </Link>
            
         </div>
