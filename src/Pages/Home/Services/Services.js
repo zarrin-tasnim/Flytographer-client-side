@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
     const [services, setServices] = useState([]);
-    
-    useEffect( () =>{
-        fetch('http://localhost:5000/services')
-        .then(res =>res.json())
-        .then(data => setServices(data))
+
+    useEffect(() => {
+        fetch('https://b6a11-service-review-server-side-zarrin-tasnim.vercel.app/services')
+            .then(res => res.json())
+            .then(data => setServices(data))
     }, []);
 
-   
+
     return (
         <div>
             <div className='text-center mb-4'>
@@ -32,7 +32,7 @@ const Services = () => {
             <Link to={`/serviceAll`}>
                 <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ml-20 mt-10 mb-10 bg-purple-900">See All</button>
             </Link>
-           
+
         </div>
     );
 };

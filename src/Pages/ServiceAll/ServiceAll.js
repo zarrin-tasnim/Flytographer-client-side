@@ -9,7 +9,7 @@ const ServicesAll = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/serviceAll')
+        fetch('https://b6a11-service-review-server-side-zarrin-tasnim.vercel.app/serviceAll')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
@@ -30,7 +30,7 @@ const ServicesAll = () => {
                     ></ServiceDetails>)
                 }
             </div>
-            
+
 
         </div>
     );

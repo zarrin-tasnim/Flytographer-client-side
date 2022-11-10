@@ -12,7 +12,7 @@ const Review = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/review?email=${user?.email}`, {
+        fetch(`https://b6a11-service-review-server-side-zarrin-tasnim.vercel.app/review?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('Flytographer-token')}`
             }
@@ -31,7 +31,7 @@ const Review = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete this COMMENT');
         if (proceed) {
-            fetch(`http://localhost:5000/review/${id}`, {
+            fetch(`https://b6a11-service-review-server-side-zarrin-tasnim.vercel.app/review/${id}`, {
                 method: 'DELETE',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('Flytographer-token')}`
@@ -49,7 +49,7 @@ const Review = () => {
     }
 
     const handleStatusUpdate = id => {
-        fetch(`http://localhost:5000/review/${id}`, {
+        fetch(`https://b6a11-service-review-server-side-zarrin-tasnim.vercel.app/review/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
