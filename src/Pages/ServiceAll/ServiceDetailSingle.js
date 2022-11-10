@@ -3,13 +3,14 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import useTitle from './../../hook/useTitle';
+import Review from '../Review/Review';
 
 const ServiceDetailSingle = () => {
     useTitle('ServiceDetails');
     const serviceDetails = useLoaderData(); 
     const { _id, img, price, title, description } = serviceDetails;
     return (
-        <div>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
             <div className="card card-compact w-96 bg-base-100 shadow-xl ">
                 <PhotoProvider>
                     <PhotoView src={img}>
@@ -27,6 +28,9 @@ const ServiceDetailSingle = () => {
                         </Link>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Review></Review>
             </div>
         </div>
     );
