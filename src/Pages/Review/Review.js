@@ -5,7 +5,7 @@ const Review = () => {
     useTitle('Review');
     return (
         <div>
-            
+           Review 
         </div>
     );
 };

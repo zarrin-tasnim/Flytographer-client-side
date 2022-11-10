@@ -22,8 +22,8 @@ const ServiceDetailSingle = () => {
                     <p className='text-2xl text-orange-600 font-semibold'>Price: ${price}</p>
                     <p>DEscription: {description}</p>
                     <div className="card-actions justify-end">
-                        <Link to={`/services/${_id}`}>
-                            <button className="btn btn-primary">View details</button>
+                        <Link to={`/review/${_id}`}>
+                            <button className="btn btn-primary">Add Review</button>
                         </Link>
                     </div>
                 </div>
