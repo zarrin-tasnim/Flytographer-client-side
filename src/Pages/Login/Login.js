@@ -40,7 +40,7 @@ const Login = () => {
                     .then(data => {
                         console.log(data);
                         // local storage is the easiest but not the best place to store jwt token
-                        localStorage.setItem('genius-token', data.token);
+                        localStorage.setItem('Flytographer-token', data.token);
                         navigate(from, { replace: true });
                     });
 
@@ -76,7 +76,7 @@ const Login = () => {
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
                     </form>
-                    <p className='text-center'>New to Genius Car <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
+                    <p className='text-center'>New to Flytographer? <Link className='text-purple-600 font-bold' to="/signup">Sign Up</Link> </p>
                 </div>
             </div>
         </div>

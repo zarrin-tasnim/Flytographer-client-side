@@ -27,7 +27,7 @@ const Header = () => {
         {
             user?.email ?
                 <>
-                    <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
+                    <li className='font-semibold'><Link to='/review'>Review</Link></li>
                     <li className='font-semibold'>
                         <button onClick={ handleLogOut } className='btn-ghost'>Sign Out</button>
                     </li>
@@ -38,7 +38,7 @@ const Header = () => {
     </>
 
     return (
-        <div className="navbar  h-20 mb-12 pt-12 bg-base-100">
+        <div className="navbar bg-purple-900 text-neutral-content  h-20 mb-12 p-12 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -51,7 +51,7 @@ const Header = () => {
                 <Link to="/" className="">
 
                     <div className="avatar">
-                        <div className="w-24 rounded-full">
+                        <div className="w-16 p-1 rounded-full">
                             <img src={logo} alt="" />
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-outline btn-warning">Contact</button>
+                <button className="btn btn-outline btn-primary glass">Contact</button>
             </div>
         </div>
     );
