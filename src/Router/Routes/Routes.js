@@ -1,13 +1,15 @@
 
 import Main from "../../Layout/Main";
 import Blogs from "../../Pages/Blogs/Blogs";
-import Services from "../../Pages/Home/Services/Services";
+
 import Login from "../../Pages/Login/Login";
 
 
 import Home from './../../Pages/Home/Home/Home';
 import SignUp from './../../Pages/SignUP/SignUP';
 
+import ServicesAll from './../../Pages/ServiceAll/ServiceAll';
+import ServiceDetailSingle from './../../Pages/ServiceAll/ServiceDetailSingle';
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -33,8 +35,13 @@ const router = createBrowserRouter([
           element: <SignUp></SignUp>
         },
         {
-          path: '/servicesAll',
-          element: <Services></Services>
+          path: '/serviceAll',
+          element: <ServicesAll></ServicesAll>
+        },
+        {
+          path: '/services/:id',
+          element: <ServiceDetailSingle></ServiceDetailSingle>,
+          loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
         }
       ]
     }

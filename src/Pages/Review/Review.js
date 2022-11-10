@@ -1,13 +1,13 @@
 import React from 'react';
 import useTitle from './../../hook/useTitle';
 
-const Blogs = () => {
-    useTitle('Blogs');
+const Review = () => {
+    useTitle('Review');
     return (
         <div>
-            This is blogs
+            
         </div>
     );
 };
 
-export default Blogs;
+export default Review;

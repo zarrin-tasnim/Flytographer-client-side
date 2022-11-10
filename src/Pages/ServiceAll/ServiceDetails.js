@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import useTitle from './../../hook/useTitle';
 
-const ServiceCard = ({ service }) => {
+const ServiceDetails = ({ service }) => {
+    useTitle('Service');
     const { _id, img, price, title, description } = service;
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
@@ -12,13 +14,13 @@ const ServiceCard = ({ service }) => {
                     <figure><img className='' src={img} alt="" srcset="" /></figure>
                 </PhotoView>
             </PhotoProvider>
-            
+
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p className='text-2xl text-orange-600 font-semibold'>Price: ${price}</p>
                 <p>DEscription: {description}</p>
                 <div className="card-actions justify-end">
-                    <Link to={`/services/${_id}`}>
+                    <Link  to={`/services/${_id}`}>
                         <button className="btn btn-primary">View details</button>
                     </Link>
                 </div>
@@ -27,4 +29,4 @@ const ServiceCard = ({ service }) => {
     );
 };
 
-export default ServiceCard;
+export default ServiceDetails;

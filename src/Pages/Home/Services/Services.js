@@ -29,8 +29,8 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <Link to={`/servicesAll`}>
-                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-purple-900">See All</button>
+            <Link to={`/serviceAll`}>
+                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ml-20 mt-10 mb-10 bg-purple-900">See All</button>
             </Link>
            
         </div>

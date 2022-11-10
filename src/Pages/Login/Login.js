@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login.jpeg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from './../../hook/useTitle';
 
 const Login = () => {
 
@@ -48,6 +49,7 @@ const Login = () => {
             .catch(error => console.log(error));
     }
 
+    useTitle('Login');
     return (
         <div className="hero w-full my-20">
             <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
