@@ -19,7 +19,7 @@ const ServicesAll = () => {
         <div>
             <div className='text-center mb-4'>
                 <p className="text-3xl font-bold text-purple-900">Services</p>
-                <h2 className="text-5xl font-semibold">Our Service Area</h2>
+                <h2 className="text-5xl font-semibold">Our Whole Service Area</h2>
                 <p>Every moment has a story, see their happy moment captured by us.We provide all of these services to our customers.  </p>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

@@ -43,7 +43,7 @@ const ReviewForm = () => {
             .then(data => {
                 console.log(data)
                 if (data.acknowledged) {
-                    alert('Order placed successfully')
+                    alert('Comment placed successfully')
                     form.reset();
 
                 }
